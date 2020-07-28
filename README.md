@@ -11,3 +11,6 @@ This project was done in reference to the tutorial in https://github.com/ocastro
 7. Type "npm install"
 8. Type "npm start"
 9. In the off chance that Visual Studio code prompts you to run "npm audit fix", try running "npm start" first. I have experienced it many times and more times than often, "npm audit fix" actually destroyed the code rather than help me.
+10. Have fun and all the best!
+
+**Disclaimer : The source code that was used to implement the coursework project is no longer maintained. There may be errors or bugs that did not exist at the time of creation.**
