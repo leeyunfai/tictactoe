@@ -1,0 +1,237 @@
+body {
+  font: 22px "Century Gothic", sans-serif;
+  margin: 20px;
+  color: rgb(223, 222, 222);
+  height: 100px;
+  width: auto;
+  background-image: linear-gradient(90deg, #7474bf, #348ac7, #3e94d1);
+}
+
+ol,
+ul {
+  padding-left: 30px;
+}
+
+p {
+  display: block;
+  margin-block-start: 0.7em;
+  margin-block-end: 0.7em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.status-info {
+  margin-left: 10px;
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+}
+
+.board {
+  display: flex;
+  flex-direction: row;
+  width: 25em;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  margin-left: auto;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: black;
+}
+
+.button-container {
+  margin-left: 1em;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+  width: 20em;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: rgb(0, 0, 0);
+  border: 1px solid #999;
+  float: left;
+  font-size: 90px;
+  font-weight: bold;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding: 0;
+  text-align: match-parent;
+  width: 100px;
+  line-height: 100px;
+  height: 100px;
+  display: block;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  background-color: #ffccb3;
+  margin: 10px;
+  border: 1px solid #ffccb3;
+  background-image: linear-gradient(
+    bottom,
+    rgb(73, 132, 180) 0%,
+    rgb(255, 179, 198) 100%
+  );
+  background-image: -o-linear-gradient(
+    bottom,
+    rgb(73, 132, 180) 0%,
+    rgb(255, 179, 198) 100%
+  );
+  background-image: -moz-linear-gradient(
+    bottom,
+    rgb(73, 132, 180) 0%,
+    rgb(255, 179, 198) 100%
+  );
+  background-image: -webkit-linear-gradient(
+    bottom,
+    rgb(73, 132, 180) 0%,
+    rgb(255, 179, 198) 100%
+  );
+  background-image: -ms-linear-gradient(
+    bottom,
+    rgb(73, 132, 180) 0%,
+    rgb(255, 179, 198) 100%
+  );
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0, rgb(255, 179, 179)),
+    color-stop(1, rgb(255, 179, 179))
+  );
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 6px 0px #d69b9b, 0px 3px 15px rgba(0, 0, 0, 0.4),
+    inset 0px 1px 0px rgba(255, 255, 255, 0.3),
+    inset 0px 0px 3px rgba(255, 255, 255, 0.5);
+  -moz-box-shadow: 0px 6px 0px #d69b9b, 0px 3px 15px rgba(0, 0, 0, 0.4),
+    inset 0px 1px 0px rgba(255, 255, 255, 0.3),
+    inset 0px 0px 3px rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 6px 0px #d69b9b, 0px 3px 15px rgba(0, 0, 0, 0.4),
+    inset 0px 1px 0px rgba(255, 255, 255, 0.3),
+    inset 0px 0px 3px rgba(255, 255, 255, 0.5);
+}
+.square:active {
+  background-image: linear-gradient(
+    bottom,
+    rgb(88, 154, 204) 0%,
+    rgb(255, 179, 179) 100%
+  );
+  background-image: -o-linear-gradient(
+    bottom,
+    rgb(88, 154, 204) 0%,
+    rgb(255, 179, 179) 100%
+  );
+  background-image: -moz-linear-gradient(
+    bottom,
+    rgb(88, 154, 204) 0%,
+    rgb(255, 179, 179) 100%
+  );
+  background-image: -webkit-linear-gradient(
+    bottom,
+    rgb(88, 154, 204) 0%,
+    rgb(255, 179, 179) 100%
+  );
+  background-image: -ms-linear-gradient(
+    bottom,
+    rgb(88, 154, 204) 0%,
+    rgb(255, 179, 179) 100%
+  );
+
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0, rgb(255, 179, 179)),
+    color-stop(1, rgb(255, 179, 179))
+  );
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.2em;
+  margin-left: auto;
+  justify-content: center;
+  align-items: center;
+  min-height: 15vh;
+}
+
+.scores-container {
+  margin-right: 180px;
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.create-button {
+  margin-right: 5px;
+  margin-bottom: 15px;
+  width: 5em;
+  height: auto;
+  font-size: 35px;
+  transition-duration: 0.4s;
+  border-radius: 30px;
+}
+
+.create-button:hover {
+  background-color: black;
+  color: white;
+}
+
+.join-button {
+  width: 5em;
+  height: auto;
+  font-size: 35px;
+  transition-duration: 0.4s;
+  border-radius: 30px;
+}
+
+.join-button:hover {
+  background-color: black;
+  color: white;
+}
+
+.input-class {
+  margin-top: -0.1em;
+}
+
+.title-class {
+  font-size: 1.5rem;
+}
+
+.popup-class {
+  height: 165px;
+}
+
+.join-button-class {
+  margin: 0.3125em;
+  padding: 0.5em 1.8em;
+  margin-bottom: 1em;
+}
+
+.button-class {
+  margin: 0.3125em;
+  padding: 0.5em 1.8em;
+}
